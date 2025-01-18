@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2b3035;
+}
+
+header a img {
+  border-right: 4px solid #b5640b;
+}
+
+header nav {
+  padding: 0.5rem;
+  width: 100%;
+}
+header nav ul {
+  color: whitesmoke;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #9fa2a4;
+}
+
+header nav ul li a:hover {
+  color: #cacbcc;
+}
+
+.link_active {
+  color: #fff;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  flex-direction: column;
+  flex: 1;
+}
+main div {
+  width: 100%;
+}
+
+/* pagina de servicios */
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.servicios .item {
+  flex: 1 1 calc(50% - 20px);
+  box-sizing: border-box;
+}
+
+.servicios .item .img {
+  width: 20%;
+  float: left;
+  padding: 4px;
+}
+
+.servicios .item .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.servicios .item .texto {
+  width: 80%;
+  float: left;
+}
+
+/* pagina de .productos */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.productos div {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+.productos img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* pagina de contatco */
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  margin-bottom: 5px;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #0056b3;
+}
+
+.espacio_footer {
+  height: 2rem;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  margin-top: 1.5;
+  background-color: #6c757d;
+  height: 30px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 991px) {
+  header a img {
+    border-right: none;
+  }
+  main {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .servicios .item {
+    flex: 1 1 calc(100% - 20px);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 450px) {
+  main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .servicios .item .img {
+    display: none;
+  }
+  .servicios .item .texto {
+    width: 90%;
+    float: left;
+  }
+}
