@@ -1,6 +1,9 @@
 # CoderHouse Proyecto
 
-Proyecto desarrollado para CoderHouse donde usamos flex, bootstrap, media query. El proyecto tiene 5 páginas:
+Proyecto desarrollado para CoderHouse donde usamos flex, bootstrap, media query.
+Utilice bootstrap de forma local, o sea me lo descargue.
+
+El proyecto tiene 5 páginas:
 
 ## Noticias
 
