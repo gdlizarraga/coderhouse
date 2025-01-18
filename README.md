@@ -15,6 +15,8 @@ También se incluyó una página de detalle de la noticia que está disponible a
 
 En esta página se usó el menú bootstrap y los ítems de servicios son display: flex.
 
+Se uso nomenclatura BEM en algunas clases de Servicios.
+
 Se utilizó 2 columnas y los media query para llevar las columnas a 1 sola aplicando estilo para cada caso.
 
 ## Productos y Precios
