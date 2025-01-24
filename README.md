@@ -7,7 +7,7 @@ El proyecto tiene 5 páginas:
 
 ## Noticias
 
-En esta página se usó todo bootstrap y utilicé una hoja de estilo para esa página para que no pise los estilos del header, menú y footer que uso en los que son flex/grid.
+En esta página se usó todo bootstrap.
 
 También se incluyó una página de detalle de la noticia que está disponible al hacer click sobre el botón "más información".
 
