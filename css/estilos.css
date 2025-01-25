@@ -72,19 +72,19 @@ main div {
   box-sizing: border-box;
 }
 
-.servicios__item__img {
+.servicios__img {
   width: 20%;
   float: left;
   padding: 4px;
 }
 
-.servicios__item__img img {
+.servicios__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
-.servicios__item__texto {
+.servicios__texto {
   width: 80%;
   float: left;
 }
@@ -187,10 +187,10 @@ footer {
     margin-left: 1rem;
     margin-right: 1rem;
   }
-  .servicios__item__img {
+  .servicios__img {
     display: none;
   }
-  .servicios__item__texto {
+  .servicios__texto {
     width: 90%;
     float: left;
   }
